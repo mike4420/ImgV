@@ -18,6 +18,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIImageView *imgview = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    [self.view addSubview:imgview];
+    imgview.image = [UIImage imageNamed:@"img.JPG"];
+    imgview.backgroundColor = [UIColor greenColor];
+    imgview.contentMode = UIViewContentModeScaleAspectFit;
+
 }
 
 - (void)didReceiveMemoryWarning
